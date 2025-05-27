@@ -2,7 +2,4 @@ streamlit
 matplotlib
 pandas
 numpy
-hashlib
-json
-os
 scikit-learn
