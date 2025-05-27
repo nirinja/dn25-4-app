@@ -1,8 +1,1 @@
-streamlit
-matplotlib
-pandas
-numpy
-hashlib
-json
-os
-cosine_similarity
+pip freeze > requirements.txt
