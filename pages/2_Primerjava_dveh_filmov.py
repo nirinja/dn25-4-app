@@ -69,8 +69,11 @@ plt.tight_layout()
 st.pyplot(fig)
 
 # Povprečna letna ocena in število ocen na leto
-ratings1['year'] = pd.to_datetime(ratings1['timestamp'], unit='s').dt.year
-ratings2['year'] = pd.to_datetime(ratings2['timestamp'], unit='s').dt.year
+ratings1 = df[df['movieId'] == id1].copy()
+ratings2 = df[df['movieId'] == id2].copy()
+
+ratings1.loc[:, 'year'] = pd.to_datetime(ratings1['timestamp'], unit='s').dt.year
+ratings2.loc[:, 'year'] = pd.to_datetime(ratings2['timestamp'], unit='s').dt.year
 
 avg_year1 = ratings1.groupby('year')['rating'].mean()
 avg_year2 = ratings2.groupby('year')['rating'].mean()
