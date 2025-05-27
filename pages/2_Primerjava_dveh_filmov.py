@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 # Naloži podatke
-movies = pd.read_csv('../podatki/ml-latest-small/movies.csv')
-ratings = pd.read_csv('../podatki/ml-latest-small/ratings.csv')
+movies = pd.read_csv('podatki/ml-latest-small/movies.csv')
+ratings = pd.read_csv('podatki/ml-latest-small/ratings.csv')
 
 # Združi ocene z naslovi filmov
 merged_ratings = ratings.merge(movies[['movieId', 'title']], on='movieId')

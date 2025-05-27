@@ -3,8 +3,8 @@ import numpy as np
 import streamlit as st
 
 # Naložimo podatke
-movies = pd.read_csv('../podatki/ml-latest-small/movies.csv')
-ratings = pd.read_csv('../podatki/ml-latest-small/ratings.csv')
+movies = pd.read_csv('podatki/ml-latest-small/movies.csv')
+ratings = pd.read_csv('podatki/ml-latest-small/ratings.csv')
 
 # Razdelimo naslov in leto
 movies['year'] = movies['title'].str.extract(r'\((\d{4})\)').astype('Int64')

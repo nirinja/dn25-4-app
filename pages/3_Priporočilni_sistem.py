@@ -6,8 +6,8 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-movies = pd.read_csv('../podatki/ml-latest-small/movies.csv')
-ratings_df = pd.read_csv('../podatki/ml-latest-small/ratings.csv')
+movies = pd.read_csv('podatki/ml-latest-small/movies.csv')
+ratings_df = pd.read_csv('podatki/ml-latest-small/ratings.csv')
 
 USERS_FILE = '../users.json'
 USER_RATINGS_FILE = '../ratings_user.json'
